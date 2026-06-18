@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Jeff Sandi, editor de video y diseñador de miniaturas de alto impacto en Costa Rica. Cursos de edición y servicios de producción.">
+    <title>Jeff Sandi | Editor de Video y Diseñador de Miniaturas</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Hojas de Estilo -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Script Principal (Diferido) -->
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Encabezado y Navegación (Flexbox) -->
+    <header class="main-header">
+        <a href="#inicio" class="logo" aria-label="Jeff Sandi Inicio">
+            <span class="logo-name">JEFF SANDI</span>
+            <span class="logo-sub">CREATIVE STUDIO</span>
+        </a>
+        <nav class="main-nav" aria-label="Navegación principal">
+            <ul>
+                <li><a href="#inicio" data-i18n="nav-start">Inicio</a></li>
+                <li><a href="#portafolio" data-i18n="nav-portfolio">Portafolio</a></li>
+                <li><a href="#servicios" data-i18n="nav-services">Servicios</a></li>
+                <li><a href="#curso" data-i18n="nav-course">Curso</a></li>
+                <li><a href="#contacto" data-i18n="nav-contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <!-- Botón de cambio de idioma. Almacena preferencia en localStorage -->
+            <button id="lang-btn" class="lang-toggle-btn" aria-label="Cambiar idioma a inglés" data-i18n-aria="btn-lang-aria">
+                EN
+            </button>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+
+        <!-- Sección Hero (Presentación Principal) -->
+        <section id="inicio" class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-container">
+                <div class="hero-badge" data-i18n="hero-badge">Editor & Diseñador de Miniaturas</div>
+                <h1 id="hero-title" class="hero-heading" data-i18n="hero-title">
+                    Edición de video que retiene. Miniaturas que obtienen clics.
+                </h1>
+                <p class="hero-description" data-i18n="hero-description">
+                    Ayudo a los creadores e influencers más importantes de Costa Rica a transformar sus ideas en videos virales y contenido de alto rendimiento.
+                </p>
+                <div class="hero-actions">
+                    <a href="#portafolio" class="btn btn-primary" data-i18n="hero-cta-work">Ver Portafolio</a>
+                    <a href="#curso" class="btn btn-secondary" data-i18n="hero-cta-course">Comprar Curso</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Lateral de Métricas (Aside) -->
+        <aside class="stats-aside" aria-label="Estadísticas de impacto">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">+10M</span>
+                    <span class="stat-label" data-i18n="stat-views">Vistas Generadas</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label" data-i18n="stat-experience">Años de Experiencia</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label" data-i18n="stat-channels">Canales Editados</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">15%</span>
+                    <span class="stat-label" data-i18n="stat-ctr">CTR Promedio de Miniaturas</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Sección de Portafolio (CSS Grid para Miniaturas de YouTube) -->
+        <section id="portafolio" class="portfolio-section" aria-labelledby="portfolio-title">
+            <div class="section-header">
+                <h2 id="portfolio-title" data-i18n="portfolio-title">Miniaturas Destacadas</h2>
+                <p class="section-subtitle" data-i18n="portfolio-subtitle">Diseños optimizados para maximizar el porcentaje de clics (CTR).</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Tarjeta de Miniatura 1 (Galápagos) -->
+                <article class="portfolio-card">
+                    <div class="card-image-wrapper">
+                        <img src="img/thumb_galapagos.jpg" alt="Miniatura de YouTube que muestra a un creador de contenido haciendo un gesto de silencio en una playa de Galápagos al lado de dos lobos marinos, con un letrero en la esquina superior izquierda que dice GALÁPAGOS." class="portfolio-image">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category" data-i18n="card1-cat">Viajes & Documentales</span>
+                        <h3 class="card-title" data-i18n="card1-title">Secreto en Galápagos</h3>
+                        <p class="card-description" data-i18n="card1-desc">Diseño para vlogs de viajes con recortes de alta precisión de fauna local y corrección de color avanzada.</p>
+                    </div>
+                </article>
+
+                <!-- Tarjeta de Miniatura 2 (Siberia) -->
+                <article class="portfolio-card">
+                    <div class="card-image-wrapper">
+                        <img src="img/thumb_siberia.jpg" alt="Miniatura de YouTube que muestra a un hombre con abrigo siberiano y gorro de piel en medio de la nieve con renos, tiendas nativas y pescados congelados bajo una aurora boreal verde." class="portfolio-image">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category" data-i18n="card2-cat">Aventura & Supervivencia</span>
+                        <h3 class="card-title" data-i18n="card2-title">Supervivencia en el Hielo</h3>
+                        <p class="card-description" data-i18n="card2-desc">Composición narrativa para retos climáticos con efectos de nieve, fauna y gradiente de aurora boreal.</p>
+                    </div>
+                </article>
+
+                <!-- Tarjeta de Miniatura 3 (Hollywood) -->
+                <article class="portfolio-card">
+                    <div class="card-image-wrapper">
+                        <img src="img/thumb_hollywood.jpg" alt="Miniatura de YouTube que muestra el perfil de un hombre con gorra negra observando un auto deportivo rojo en Los Ángeles, y manifestantes con la bandera de México bajo el letrero de Hollywood." class="portfolio-image">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category" data-i18n="card3-cat">Retos & Estilo de Vida</span>
+                        <h3 class="card-title" data-i18n="card3-title">El Sueño Americano</h3>
+                        <p class="card-description" data-i18n="card3-desc">Montaje de estilo reto combinando retrato emocional, auto deportivo de lujo e historia de fondo social.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Servicios (Flexbox) -->
+        <section id="servicios" class="services-section" aria-labelledby="services-title">
+            <div class="section-header">
+                <h2 id="services-title" data-i18n="services-title">Servicios Profesionales</h2>
+                <p class="section-subtitle" data-i18n="services-subtitle">Soluciones personalizadas para llevar la producción de tus videos al siguiente nivel.</p>
+            </div>
+
+            <div class="services-container">
+                <!-- Servicio 1: Edición -->
+                <div class="service-card">
+                    <div class="service-icon" aria-hidden="true">🎬</div>
+                    <h3 data-i18n="service1-title">Edición de Video Retentiva</h3>
+                    <p data-i18n="service1-desc">
+                        Cortes dinámicos, diseño de sonido cinematográfico, efectos visuales de precisión y ritmos acelerados estructurados para retener a la audiencia y maximizar el tiempo de reproducción.
+                    </p>
+                </div>
+
+                <!-- Servicio 2: Miniaturas -->
+                <div class="service-card">
+                    <div class="service-icon" aria-hidden="true">🎨</div>
+                    <h3 data-i18n="service2-title">Diseño de Miniaturas CTR</h3>
+                    <p data-i18n="service2-desc">
+                        Análisis psicológico de la audiencia, corrección de color avanzada, modelado de texto tridimensional y composiciones con contraste optimizado para destacar sobre cualquier competencia.
+                    </p>
+                </div>
+
+                <!-- Servicio 3: Consultoría -->
+                <div class="service-card">
+                    <div class="service-icon" aria-hidden="true">📈</div>
+                    <h3 data-i18n="service3-title">Consultoría Estratégica</h3>
+                    <p data-i18n="service3-desc">
+                        Optimización de títulos, re-estructuración de introducciones (los primeros 30 segundos críticos), auditoría técnica del canal e ideas de contenido enfocadas en la retención masiva.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección del Curso (Promoción & Ventas) -->
+        <section id="curso" class="course-section" aria-labelledby="course-title">
+            <div class="course-grid-card">
+                <div class="course-info">
+                    <span class="course-tag" data-i18n="course-tag">CURSO EXCLUSIVO ONLINE</span>
+                    <h2 id="course-title" data-i18n="course-title">Fórmula Miniaturas & Edición de Alto Impacto</h2>
+                    <p class="course-description" data-i18n="course-desc">
+                        Aprende paso a paso los secretos y flujos de trabajo que utilizo diariamente para crear contenido para los canales más grandes de Costa Rica. Desde la conceptualización de ideas hasta la edición de sonido y exportación óptima.
+                    </p>
+                    <ul class="course-features">
+                        <li>
+                            <span class="feature-icon" aria-hidden="true">✓</span>
+                            <span data-i18n="course-feat1">Más de 20 horas de lecciones en video HD</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon" aria-hidden="true">✓</span>
+                            <span data-i18n="course-feat2">Recursos descargables (Sound effects, presets de color, PSDs de miniaturas)</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon" aria-hidden="true">✓</span>
+                            <span data-i18n="course-feat3">Acceso de por vida y comunidad privada de estudiantes</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon" aria-hidden="true">✓</span>
+                            <span data-i18n="course-feat4">Proyectos prácticos calificados por mí</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="course-pricing-card">
+                    <div class="price-header">
+                        <span class="price-original">$149 USD</span>
+                        <div class="price-accent">
+                            <span class="currency">$</span>
+                            <span class="amount">49</span>
+                            <span class="period">USD</span>
+                        </div>
+                        <p class="price-label" data-i18n="course-promo">Oferta de lanzamiento - Pago único</p>
+                    </div>
+                    <button class="btn btn-primary btn-block" data-i18n="course-buy">Comprar Curso Ahora</button>
+                    <p class="price-guarantee" data-i18n="course-guarantee">Garantía de reembolso de 14 días sin preguntas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto (Formulario Accesible) -->
+        <section id="contacto" class="contact-section" aria-labelledby="contact-title">
+            <div class="contact-container">
+                <div class="section-header">
+                    <h2 id="contact-title" data-i18n="contact-title">Inicia tu Proyecto</h2>
+                    <p class="section-subtitle" data-i18n="contact-subtitle">Cuéntame sobre tu canal de YouTube, tus objetivos o tus dudas sobre el curso.</p>
+                </div>
+
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name" data-i18n="form-name">Nombre Completo</label>
+                        <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre">
+                        <span class="error-msg" id="name-error" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-i18n="form-email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+                        <span class="error-msg" id="email-error" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" data-i18n="form-subject">Asunto</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected data-i18n="form-sub-select">Selecciona una opción</option>
+                            <option value="video" data-i18n="form-sub-video">Edición de Video</option>
+                            <option value="thumbnail" data-i18n="form-sub-thumb">Diseño de Miniaturas</option>
+                            <option value="course" data-i18n="form-sub-course">Información sobre el Curso</option>
+                            <option value="other" data-i18n="form-sub-other">Otro Asunto</option>
+                        </select>
+                        <span class="error-msg" id="subject-error" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-i18n="form-msg">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje detallado aquí..."></textarea>
+                        <span class="error-msg" id="message-error" aria-live="polite"></span>
+                    </div>
+
+                    <!-- Mensaje de éxito del Web Storage (si se envía) -->
+                    <div id="form-feedback" class="form-feedback" aria-live="assertive" style="display: none;"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block" data-i18n="form-submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de Página (Footer) -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <span class="logo-name">JEFF SANDI</span>
+                <p class="footer-desc" data-i18n="footer-desc">Estrategias de edición y diseño visual de alto impacto para creadores modernos.</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer-social-title">Redes Sociales</h4>
+                <ul class="social-links-list">
+                    <li><a href="https://www.instagram.com/jeffsandi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Jeff Sandi (abre en nueva pestaña)">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@JeffSandi13" target="_blank" rel="noopener noreferrer" aria-label="YouTube de Jeff Sandi (abre en nueva pestaña)">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 Jeff Sandi. <span data-i18n="footer-rights">Todos los derechos reservados.</span></p>
+            <p class="academic-note">UTN - ISW-521 Programación en Ambiente Web I | Laboratorio #1</p>
+        </div>
+    </footer>
+
+</body>
+</html>
